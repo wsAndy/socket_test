@@ -31,6 +31,8 @@ class WsSocket(object):
             while True:
                 try:
                     data = self.cli.recv(1024)
+                    if(data == ""):
+                        break;tmp = '88'
                     print('[%s] says: %s' % (ctime(), data))
                     self.cli.send('get at time: [%s]' % ctime() + '\n')
 

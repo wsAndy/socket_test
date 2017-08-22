@@ -14,7 +14,7 @@ from time import ctime
 class WsSocket(object):
 
     def __init__(self):
-        self.host = '127.0.0.1'
+        self.host = '192.168.1.105'
         self.port = 54321
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.sock.bind((self.host,self.port))

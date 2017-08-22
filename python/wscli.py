@@ -15,7 +15,7 @@ class WsCli(object):
 
         self.cli = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.port = 54321
-        self.ip = '127.0.0.1'
+        self.ip = '192.168.1.105'
         self.cli.connect((self.ip, self.port))
 
     def connect(self):
